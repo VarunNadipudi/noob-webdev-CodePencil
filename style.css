@@ -1,0 +1,109 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito';
+  background-color: black;
+}
+.main-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem 20px 2rem;
+  margin-top: 20px;
+  border-bottom: .5px solid #666;
+}
+.title-box{
+  padding: 0 2rem 0 0;
+  display: flex;
+  align-items:baseline;
+  justify-content: flex-start;
+  gap:.5rem;
+}
+.button-box button{
+  width: 100px;
+  height: 40px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+#signup{
+  background-color: coral;
+  color: #333;
+  border: none;
+  border-radius: .3rem;
+}
+#signup:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+#login{
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: .3rem;
+}
+#login:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.title-box>p{
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.editor{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 2rem 2rem;
+}
+
+textarea{
+  width: 95%;
+  max-width: 95%;
+  height: 95%;
+  background-color: #333;
+  border-radius: .3rem;
+  color: yellow;
+  padding: 10px;
+  outline: none;
+  resize: none;
+}
+
+.editor-type{
+  flex: 1 1 24rem;
+  height: 360px;
+}
+.title{
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: .5rem;
+}
+.title>p{
+  padding: 0 ;
+  margin: .2rem;
+  color: white;
+}
+
+.result{
+  display: flex;
+  justify-content: flex-start;
+  /* flex-direction: column; */
+  padding: 0rem 2rem;
+  height: 260px;
+}
+
+#output{
+  width: 100%;
+  height: auto;
+}
+
+iframe{
+  background-color: #666;
+  border: none;
+}
