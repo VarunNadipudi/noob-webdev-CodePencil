@@ -4,7 +4,8 @@ function run(){
   let js = document.querySelector(".editor-type #js-code").value;
   let output = document.querySelector(".result #output");
 
-  output.contentDocument.body.innerHTML  = html + css;
+  output.contentDocument.body.innerHTML  = html;
+  output.contentDocument.head.innerHTML  = css;
   output.contentWindow.eval(js); 
 }
 document.querySelector(".editor-type #html-code").addEventListener('keyup', run);
